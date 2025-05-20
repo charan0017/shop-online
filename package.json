@@ -8,7 +8,8 @@
     "frontend-build": "cd frontend && npm run build",
     "dev": "npm run frontend-build && nodemon",
     "start": "npm run frontend-build && node index.js",
-    "deploy": "cd frontend && npm install && npm run build && cd ../ && node index.js"
+    "deploy-pre-action": "cd frontend && npm run install && npm run build",
+    "deploy": "node index.js"
   },
   "keywords": [],
   "author": "",
